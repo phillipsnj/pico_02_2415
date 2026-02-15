@@ -1,4 +1,4 @@
-from cbus_slim_node import CbusNode
+from lib.cbus_slim_node import CbusNode
 import socket
 import asyncio
 
@@ -40,8 +40,6 @@ class eth_cbus_node(CbusNode):
         # time.sleep(1)
         # print("Child Send : " + msg)
         self.s.send(msg.encode())
-
-
 
 
 async def main(name: str) -> None:
